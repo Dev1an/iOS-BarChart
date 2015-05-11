@@ -12,6 +12,13 @@
 		74DC80FE1B01181200B527DA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74DC80FD1B01181200B527DA /* Images.xcassets */; };
 		74DC81011B01181200B527DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74DC80FF1B01181200B527DA /* Main.storyboard */; };
 		74DC810D1B01181200B527DA /* BarChartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC810C1B01181200B527DA /* BarChartTests.swift */; };
+		74DC81171B011B6300B527DA /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC81161B011B6300B527DA /* ColorView.swift */; };
+		74DC81211B011D9900B527DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC81201B011D9900B527DA /* AppDelegate.swift */; };
+		74DC81231B011D9900B527DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC81221B011D9900B527DA /* ViewController.swift */; };
+		74DC81261B011D9900B527DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74DC81241B011D9900B527DA /* Main.storyboard */; };
+		74DC81281B011D9900B527DA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74DC81271B011D9900B527DA /* Images.xcassets */; };
+		74DC812B1B011D9900B527DA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74DC81291B011D9900B527DA /* LaunchScreen.xib */; };
+		74DC81371B011D9900B527DA /* iOSBarChartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC81361B011D9900B527DA /* iOSBarChartTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -21,6 +28,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 74DC80F31B01181200B527DA;
 			remoteInfo = BarChart;
+		};
+		74DC81311B011D9900B527DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74DC80EC1B01181200B527DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74DC811B1B011D9900B527DA;
+			remoteInfo = iOSBarChart;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -34,6 +48,17 @@
 		74DC81061B01181200B527DA /* BarChartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarChartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74DC810B1B01181200B527DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74DC810C1B01181200B527DA /* BarChartTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartTests.swift; sourceTree = "<group>"; };
+		74DC81161B011B6300B527DA /* ColorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
+		74DC811C1B011D9900B527DA /* iOSBarChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSBarChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		74DC811F1B011D9900B527DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74DC81201B011D9900B527DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		74DC81221B011D9900B527DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		74DC81251B011D9900B527DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		74DC81271B011D9900B527DA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		74DC812A1B011D9900B527DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		74DC81301B011D9900B527DA /* iOSBarChartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSBarChartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		74DC81351B011D9900B527DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74DC81361B011D9900B527DA /* iOSBarChartTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSBarChartTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +76,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		74DC81191B011D9900B527DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74DC812D1B011D9900B527DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -59,6 +98,8 @@
 			children = (
 				74DC80F61B01181200B527DA /* BarChart */,
 				74DC81091B01181200B527DA /* BarChartTests */,
+				74DC811D1B011D9900B527DA /* iOSBarChart */,
+				74DC81331B011D9900B527DA /* iOSBarChartTests */,
 				74DC80F51B01181200B527DA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,6 +109,8 @@
 			children = (
 				74DC80F41B01181200B527DA /* BarChart.app */,
 				74DC81061B01181200B527DA /* BarChartTests.xctest */,
+				74DC811C1B011D9900B527DA /* iOSBarChart.app */,
+				74DC81301B011D9900B527DA /* iOSBarChartTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,6 +122,7 @@
 				74DC80FB1B01181200B527DA /* ViewController.swift */,
 				74DC80FD1B01181200B527DA /* Images.xcassets */,
 				74DC80FF1B01181200B527DA /* Main.storyboard */,
+				74DC81161B011B6300B527DA /* ColorView.swift */,
 				74DC80F71B01181200B527DA /* Supporting Files */,
 			);
 			path = BarChart;
@@ -105,6 +149,44 @@
 			isa = PBXGroup;
 			children = (
 				74DC810B1B01181200B527DA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		74DC811D1B011D9900B527DA /* iOSBarChart */ = {
+			isa = PBXGroup;
+			children = (
+				74DC81201B011D9900B527DA /* AppDelegate.swift */,
+				74DC81221B011D9900B527DA /* ViewController.swift */,
+				74DC81241B011D9900B527DA /* Main.storyboard */,
+				74DC81271B011D9900B527DA /* Images.xcassets */,
+				74DC81291B011D9900B527DA /* LaunchScreen.xib */,
+				74DC811E1B011D9900B527DA /* Supporting Files */,
+			);
+			path = iOSBarChart;
+			sourceTree = "<group>";
+		};
+		74DC811E1B011D9900B527DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				74DC811F1B011D9900B527DA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		74DC81331B011D9900B527DA /* iOSBarChartTests */ = {
+			isa = PBXGroup;
+			children = (
+				74DC81361B011D9900B527DA /* iOSBarChartTests.swift */,
+				74DC81341B011D9900B527DA /* Supporting Files */,
+			);
+			path = iOSBarChartTests;
+			sourceTree = "<group>";
+		};
+		74DC81341B011D9900B527DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				74DC81351B011D9900B527DA /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -147,6 +229,41 @@
 			productReference = 74DC81061B01181200B527DA /* BarChartTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		74DC811B1B011D9900B527DA /* iOSBarChart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74DC81381B011D9900B527DA /* Build configuration list for PBXNativeTarget "iOSBarChart" */;
+			buildPhases = (
+				74DC81181B011D9900B527DA /* Sources */,
+				74DC81191B011D9900B527DA /* Frameworks */,
+				74DC811A1B011D9900B527DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSBarChart;
+			productName = iOSBarChart;
+			productReference = 74DC811C1B011D9900B527DA /* iOSBarChart.app */;
+			productType = "com.apple.product-type.application";
+		};
+		74DC812F1B011D9900B527DA /* iOSBarChartTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74DC813B1B011D9900B527DA /* Build configuration list for PBXNativeTarget "iOSBarChartTests" */;
+			buildPhases = (
+				74DC812C1B011D9900B527DA /* Sources */,
+				74DC812D1B011D9900B527DA /* Frameworks */,
+				74DC812E1B011D9900B527DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74DC81321B011D9900B527DA /* PBXTargetDependency */,
+			);
+			name = iOSBarChartTests;
+			productName = iOSBarChartTests;
+			productReference = 74DC81301B011D9900B527DA /* iOSBarChartTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -162,6 +279,13 @@
 					74DC81051B01181200B527DA = {
 						CreatedOnToolsVersion = 6.3.1;
 						TestTargetID = 74DC80F31B01181200B527DA;
+					};
+					74DC811B1B011D9900B527DA = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					74DC812F1B011D9900B527DA = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 74DC811B1B011D9900B527DA;
 					};
 				};
 			};
@@ -180,6 +304,8 @@
 			targets = (
 				74DC80F31B01181200B527DA /* BarChart */,
 				74DC81051B01181200B527DA /* BarChartTests */,
+				74DC811B1B011D9900B527DA /* iOSBarChart */,
+				74DC812F1B011D9900B527DA /* iOSBarChartTests */,
 			);
 		};
 /* End PBXProject section */
@@ -201,6 +327,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		74DC811A1B011D9900B527DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74DC81261B011D9900B527DA /* Main.storyboard in Resources */,
+				74DC812B1B011D9900B527DA /* LaunchScreen.xib in Resources */,
+				74DC81281B011D9900B527DA /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74DC812E1B011D9900B527DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -208,6 +351,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74DC81171B011B6300B527DA /* ColorView.swift in Sources */,
 				74DC80FC1B01181200B527DA /* ViewController.swift in Sources */,
 				74DC80FA1B01181200B527DA /* AppDelegate.swift in Sources */,
 			);
@@ -221,6 +365,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		74DC81181B011D9900B527DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74DC81231B011D9900B527DA /* ViewController.swift in Sources */,
+				74DC81211B011D9900B527DA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74DC812C1B011D9900B527DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74DC81371B011D9900B527DA /* iOSBarChartTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -228,6 +389,11 @@
 			isa = PBXTargetDependency;
 			target = 74DC80F31B01181200B527DA /* BarChart */;
 			targetProxy = 74DC81071B01181200B527DA /* PBXContainerItemProxy */;
+		};
+		74DC81321B011D9900B527DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74DC811B1B011D9900B527DA /* iOSBarChart */;
+			targetProxy = 74DC81311B011D9900B527DA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -238,6 +404,22 @@
 				74DC81001B01181200B527DA /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		74DC81241B011D9900B527DA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74DC81251B011D9900B527DA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		74DC81291B011D9900B527DA /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74DC812A1B011D9900B527DA /* Base */,
+			);
+			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -381,6 +563,80 @@
 			};
 			name = Release;
 		};
+		74DC81391B011D9900B527DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = iOSBarChart/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		74DC813A1B011D9900B527DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = iOSBarChart/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		74DC813C1B011D9900B527DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = iOSBarChartTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSBarChart.app/iOSBarChart";
+			};
+			name = Debug;
+		};
+		74DC813D1B011D9900B527DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = iOSBarChartTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSBarChart.app/iOSBarChart";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -406,6 +662,22 @@
 			buildConfigurations = (
 				74DC81141B01181200B527DA /* Debug */,
 				74DC81151B01181200B527DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		74DC81381B011D9900B527DA /* Build configuration list for PBXNativeTarget "iOSBarChart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74DC81391B011D9900B527DA /* Debug */,
+				74DC813A1B011D9900B527DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		74DC813B1B011D9900B527DA /* Build configuration list for PBXNativeTarget "iOSBarChartTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74DC813C1B011D9900B527DA /* Debug */,
+				74DC813D1B011D9900B527DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

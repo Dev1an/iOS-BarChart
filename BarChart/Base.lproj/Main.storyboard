@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="6198" systemVersion="14A297b" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6198"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7702"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -641,12 +642,12 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="BarChart" customModuleProvider="target"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="0.0"/>
         </scene>
-        <!--Window Controller - Window-->
+        <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
@@ -667,15 +668,65 @@
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="BarChart" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="281"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="ngC-6J-p38" customClass="ColorView" customModule="BarChart" customModuleProvider="target">
+                                <rect key="frame" x="20" y="165" width="44" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="nL6-vM-nPI"/>
+                                </constraints>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="Hbl-52-pUx" customClass="ColorView" customModule="BarChart" customModuleProvider="target">
+                                <rect key="frame" x="64" y="165" width="132" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="NRY-MG-RM8"/>
+                                </constraints>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="w8z-fT-kNT" customClass="ColorView" customModule="BarChart" customModuleProvider="target">
+                                <rect key="frame" x="196" y="165" width="264" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="3xp-g8-c3S"/>
+                                </constraints>
+                            </customView>
+                            <customView hidden="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LEq-xs-IRt">
+                                <rect key="frame" x="20" y="61" width="440" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="uSD-nK-bvC"/>
+                                </constraints>
+                            </customView>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wQ2-lO-fXf">
+                                <rect key="frame" x="186" y="13" width="109" height="32"/>
+                                <buttonCell key="cell" type="push" title="Randomize" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="whk-Qm-hH4">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="LEq-xs-IRt" firstAttribute="leading" secondItem="ngC-6J-p38" secondAttribute="leading" id="AFc-7x-okp"/>
+                            <constraint firstItem="ngC-6J-p38" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="BOw-Th-TV0"/>
+                            <constraint firstItem="w8z-fT-kNT" firstAttribute="trailing" secondItem="LEq-xs-IRt" secondAttribute="trailing" id="D7y-lE-E1S"/>
+                            <constraint firstAttribute="centerX" secondItem="wQ2-lO-fXf" secondAttribute="centerX" id="ELe-Xw-bXG"/>
+                            <constraint firstItem="wQ2-lO-fXf" firstAttribute="top" secondItem="LEq-xs-IRt" secondAttribute="bottom" constant="20" id="KPU-NQ-GrN"/>
+                            <constraint firstItem="Hbl-52-pUx" firstAttribute="leading" secondItem="ngC-6J-p38" secondAttribute="trailing" id="KtR-t7-g1c"/>
+                            <constraint firstItem="LEq-xs-IRt" firstAttribute="top" secondItem="ngC-6J-p38" secondAttribute="bottom" constant="8" id="OIn-TO-eyv"/>
+                            <constraint firstItem="w8z-fT-kNT" firstAttribute="top" secondItem="ngC-6J-p38" secondAttribute="top" id="Z4B-Yv-Pen"/>
+                            <constraint firstItem="w8z-fT-kNT" firstAttribute="leading" secondItem="Hbl-52-pUx" secondAttribute="trailing" id="eqx-h4-pqE"/>
+                            <constraint firstItem="ngC-6J-p38" firstAttribute="width" secondItem="LEq-xs-IRt" secondAttribute="width" multiplier="0.1" id="gsj-os-3Gr"/>
+                            <constraint firstItem="Hbl-52-pUx" firstAttribute="top" secondItem="ngC-6J-p38" secondAttribute="top" id="gye-pN-VIW"/>
+                            <constraint firstItem="LEq-xs-IRt" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="h43-fd-RWj"/>
+                            <constraint firstAttribute="bottom" secondItem="wQ2-lO-fXf" secondAttribute="bottom" constant="20" id="k8w-PC-EBE"/>
+                            <constraint firstItem="w8z-fT-kNT" firstAttribute="width" secondItem="LEq-xs-IRt" secondAttribute="width" multiplier="0.6" id="mvQ-hw-pWw"/>
+                            <constraint firstAttribute="trailing" secondItem="LEq-xs-IRt" secondAttribute="trailing" constant="20" id="pMs-v0-73t"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="143" y="720.5"/>
         </scene>
     </scenes>
 </document>
